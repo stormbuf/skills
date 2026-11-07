@@ -21,13 +21,13 @@ cp -R skills/skills/writing/stormbuf-tech-writing-style ~/.agents/skills/
 </details>
 
 <details>
-<summary><strong>skills.sh 安装器（实验性）</strong></summary>
+<summary><strong>skills.sh 安装器</strong></summary>
 
 ```bash
-npx skills@latest add stormbuf/skills
+npx skills add stormbuf/skills -g -y -s stormbuf-tech-writing-style -a <agent>
 ```
 
-仓库遵循 `SKILL.md` 约定，理论上可被 skills.sh 索引；未逐个 Agent 验证，以手动软链为准。
+`-a` 指定安装目标 agent。省略 `-a` 时安装器会写入它检测到的所有 agent。
 
 </details>
 
